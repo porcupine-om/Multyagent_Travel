@@ -1,0 +1,84 @@
+# Файл с промптом проекта
+prompt.txt
+
+# Виртуальное окружение
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Переменные окружения с секретами
+.env
+.env.local
+.env.*.local
+
+# Файлы, создаваемые ботом (чек-листы, QR-коды, расписания)
+agent/checklist_*.txt
+agent/checklist_*.png
+agent/*_qr.png
+agent/*_qr_part*.png
+agent/travel_*.png
+agent/*.ics
+agent/reminder_*.ics
+agent/poisk_*.ics
+
+# Или можно использовать более общий паттерн для всех созданных файлов:
+# agent/*.txt (но это исключит README.md и INSTALL.md, поэтому лучше конкретно)
+
+# Память агента (опционально - можно оставить для отслеживания, но обычно игнорируют)
+agent/memory.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Логи
+*.log
+logs/
+
